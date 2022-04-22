@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgb(42,42,42);
+}
+header, main, footer{
+    margin: 1.25rem auto;
+    max-width: 760px;
+    background-color:bisque;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content:center;
+    border-radius: 0.5rem;
+}
+footer{
+    border-radius: 0.5rem;
+}
+h1{
+    margin-left: 2rem;
+    align-self: center;
+    float: right;
+
+}
+#portraitPortal{
+    padding: 10px 0px ;
+    width: 300px;
+    border-radius: 1.5rem;
+
+}
+ul {
+    list-style-type: none;
+}
