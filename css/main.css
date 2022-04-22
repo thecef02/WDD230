@@ -36,4 +36,8 @@ h1{
 }
 ul {
     list-style-type: none;
+    padding-bottom: 1rem;
+}
+h2{
+    padding: 1rem 1rem;
 }
