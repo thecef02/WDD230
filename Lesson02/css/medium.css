@@ -1,0 +1,50 @@
+
+/* medium size */
+@media (min-width: 360px){
+    h1 {
+        font-size: 2rem;
+    }   
+    h2{
+        font-size: 1.2rem;
+    } 
+    #portraitPortal{
+        width: 200px;
+    }
+    h3{font-size: 1rem;}
+    ul{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 1.2rem;
+    }
+    main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+    main section:nth-child(3) {
+		grid-column: span 2;
+	}
+}
+
+/* large size */
+@media (min-width: 615px){
+    h1{font-size: 2.5rem;}   
+    h2{font-size: 1.5rem;} 
+    h3{font-size: 1.2rem;} 
+    #portraitPortal{
+        width: 300px;
+    }
+    ul{
+        font-size: 1.2rem;
+    }
+    footer{
+        font-size: 1.4rem;
+    }
+    main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}

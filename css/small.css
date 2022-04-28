@@ -1,3 +1,5 @@
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/* Dimensions for under 360px width */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,33 +13,38 @@ body{
 header, main, footer{
     margin: 1.25rem auto;
     max-width: 760px;
+    min-width: 260px;
     background-color:bisque;
     text-align: center;
 }
 header{
-    display: flex;
-    justify-content:center;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: center;
+    /* justify-content:center; */
     border-radius: 0.5rem;
 }
 footer{
     border-radius: 0.5rem;
 }
 h1{
-    margin-left: 2rem;
+    /* margin-left: 1rem; */
     align-self: center;
     float: right;
-
+    font-size: 1.3rem;
 }
 #portraitPortal{
     padding: 10px 0px ;
-    width: 300px;
-    border-radius: 1.5rem;
+    width: 120px;
+    border-radius: 1rem;
 
 }
 ul {
     list-style-type: none;
     padding-bottom: 1rem;
+    font-size: 0.8rem;
 }
 h2{
     padding: 1rem 1rem;
+    font-size: 1rem;
 }
