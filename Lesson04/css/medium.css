@@ -1,0 +1,24 @@
+/* medium size */
+@media (min-width: 360px){
+    h1{font-size: 1.9rem;}   
+    h2{font-size: 1.2rem;} 
+    h3{font-size: 1rem;}
+    ul{font-size: 1.2rem;}
+
+    footer{font-size: 1.2rem;}
+    /* nav ul{display: flex;}
+    nav ul li{flex: 1 1 auto;}
+    nav button {display: none;}
+    nav ul#primaryNav{display: flex;}  */
+    header nav ul li a{
+        border: none;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 450px){
+    header img{max-width: 100px;}
+}
+
+
+

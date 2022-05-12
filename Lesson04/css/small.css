@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: bisque;
+}
+header, main, footer{
+    margin: auto;
+    max-width: 1080px;
+    min-width: 260px;
+    background-color:bisque;
+    text-align: center;
+}
+header img{
+    display:flex;
+    position:absolute;
+    top:0;
+    max-width: 50px;
+    margin-top: 0.5rem;
+}
+main{
+    display: block;
+}
+nav {
+	background-color: #7F889F;
+	text-align: center;
+    box-shadow: 0 2px 12px rgb(92, 88, 88);
+    border-radius: 3px;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;}
+header nav ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.4rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+h1{
+    font-size: 1.3rem;
+    margin: 0rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+header :nth-child(1) aside{
+    display: block;
+    text-align: end;
+}
+header nav ul li a:hover{background-color: #4962a5;}
+header nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}
+header nav ul {display: none;}
+header nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1){display: block;}
+#hamburgerBtn span:nth-child(2){display: none;}
+#hamburgerBtn.open span:nth-child(1){display: none;}
+#hamburgerBtn.open span:nth-child(2){display: block;}
+
+
+
+
+

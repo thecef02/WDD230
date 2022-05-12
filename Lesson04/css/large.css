@@ -1,0 +1,13 @@
+/* large size */
+@media (min-width: 615px){
+    h1{font-size: 2.5rem;}   
+    h2{font-size: 1.5rem;} 
+    h3{font-size: 1.2rem;} 
+    header nav ul li a{font-size: 1.6rem;    }
+    footer{font-size: 1.4rem;}
+    header img{max-width: 100%;}
+    nav ul{display: flex;}
+    nav ul li{flex: 1 1 auto;}
+    nav button {display: none;}
+    nav ul#primaryNav{display: flex;} 
+}
