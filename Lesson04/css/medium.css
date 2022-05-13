@@ -18,5 +18,5 @@
 }
 
 @media (min-width: 450px){
-    header img{max-width: 100px;}
+    header div.company-name img{max-width: 100px;}
 }

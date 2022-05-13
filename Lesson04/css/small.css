@@ -15,7 +15,7 @@ header, main, footer{
     background-color:bisque;
     text-align: center;
 }
-header img{
+header div.company-name img{
     display:flex;
     position:absolute;
     top:0;
@@ -55,24 +55,68 @@ header :nth-child(1) aside{
     display: block;
     text-align: end;
     font-size: 0.6rem;
+    margin-right: 0.5rem;
 }
 header nav ul li a:hover{background-color: #4962a5;}
 header nav button{
+
     margin: .2rem 2vw;
     background: transparent;
     border: none;
     font-size: 2rem;
     color: #fff;
-    
 }
 
+#hamburgerBtn img{
+    max-width: 36px;
+    max-height: 36px;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+header nav ul li:nth-child(5) img{
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 10px;
+}
+header nav ul li:nth-child(5) {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
+header nav ul li:nth-child(5) a{
+    display: flex;
+    text-align: center;
+}
 header nav ul {display: none;}
 header nav ul.open {display: block;}
+#hamburgerBtn a{display:inline-block; }
+#hamburgerBtn button span:nth-child(1){display: block;}
+#hamburgerBtn button span:nth-child(2){display: none;}
+#hamburgerBtn.open button span:nth-child(1){display: none;}
+#hamburgerBtn.open button span:nth-child(2){display: block;}
+#hamburgerBtn.open a{display: none;}
 
-#hamburgerBtn span:nth-child(1){display: block;}
-#hamburgerBtn span:nth-child(2){display: none;}
-#hamburgerBtn.open span:nth-child(1){display: none;}
-#hamburgerBtn.open span:nth-child(2){display: block;}
+main section, main section section{
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-top: 1rem;
+    min-height: 5rem;
+}
+#spotlights section{
+    max-width: 5rem;
+}
+
+
+
+
+footer{margin-top: 1rem;}
+
+
+
+
+
+
+
+
 
 
 
