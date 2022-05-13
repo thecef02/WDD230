@@ -10,4 +10,5 @@
     nav ul li{flex: 1 1 auto;}
     nav button {display: none;}
     nav ul#primaryNav{display: flex;} 
+    header :nth-child(1) aside{font-size: 1rem;}
 }
