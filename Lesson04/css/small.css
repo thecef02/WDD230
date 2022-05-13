@@ -98,9 +98,15 @@ header nav ul.open {display: block;}
 
 main section, main section section{
     border: 1px solid rgba(0,0,0,0.2);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     min-height: 5rem;
 }
+.main-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+
 #spotlights section{
     max-width: 5rem;
 }
