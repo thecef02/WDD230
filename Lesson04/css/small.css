@@ -144,7 +144,11 @@ footer div.copyright{
     border-top:none;
 }
 .address{border-bottom: 2px solid #314781;}
-.address p{
+div.address h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+}
+div.address p{
     font-size: 0.8rem;
 }
 div.contact{

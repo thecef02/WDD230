@@ -30,11 +30,11 @@
         display: flex;
     }
     .main-grid #spotlights section{flex: 1;}
-
-    .address p{
+    
+    div.address p{
         font-size: 0.6rem;
     }
-    .address h2{font-size: 1.2rem;}
+    div.address h2{font-size: 1.3rem;}
     div.contact p{
         font-size: 0.7rem;
     }
