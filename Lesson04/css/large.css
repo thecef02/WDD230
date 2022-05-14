@@ -11,15 +11,19 @@
     header nav #hamburgerBtn {display: none;}
     nav ul#primaryNav{display: flex;} 
     header :nth-child(1) aside{font-size: 1rem;}
-
-
-
+    #join{display: block;}
     .main-grid{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
         "event hero hero spotlights"
         "weather hero hero spotlights"
-        "join news news spotlights";
+        "join news-release news-release spotlights";
+    }
+    .main-grid #spotlights{
+        display: block;
+    }
+    .f-wrapper img{
+        max-height: 80px;
     }
 }
