@@ -1,0 +1,55 @@
+/* medium size */
+@media (min-width: 360px){
+    h1{font-size: 1.9rem;}   
+    h2{font-size: 1.2rem;} 
+    h3{font-size: 1rem;}
+    ul{font-size: 1.2rem;}
+
+    footer{font-size: 1.2rem;}
+    /* nav ul{display: flex;}
+    nav ul li{flex: 1 1 auto;}
+    nav button {display: none;}
+    nav ul#primaryNav{display: flex;}  */
+    header nav ul li a{
+        border: none;
+        font-size: 1.1rem;
+    }
+    header :nth-child(1) aside{font-size: 0.8rem;}
+    #join{display: block;}
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "hero hero hero"
+        "news-release news-release news-release"
+        "spotlights spotlights spotlights"
+        "join  join join"
+        "event event weather";
+    }
+    .main-grid #spotlights{
+        display: flex;
+    }
+    .main-grid #spotlights section{flex: 1;}
+    
+    div.address p{
+        font-size: 0.6rem;
+    }
+    div.address h2{font-size: 1.3rem;}
+    div.contact p{
+        font-size: 0.7rem;
+    }
+    .f-wrapper img{
+        max-height: 60px;}
+    .f-wrapper{
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+    }
+    div.contact p{
+        font-size: 1rem;
+    }
+    }
+
+@media (min-width: 450px){
+    header div.company-name img{max-width: 100px;}
+}
