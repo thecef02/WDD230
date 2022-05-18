@@ -152,14 +152,12 @@ div.address p{
     font-size: 0.8rem;
 }
 div.contact{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 div.contact p{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 

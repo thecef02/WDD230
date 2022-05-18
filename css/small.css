@@ -43,6 +43,10 @@ ul {
     list-style-type: none;
     padding-bottom: 1rem;
     font-size: 0.8rem;
+    margin-left: 3rem;
+}
+ul li{
+    text-align: left;
 }
 h2{
     padding: 1rem 1rem;
