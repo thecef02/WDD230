@@ -48,6 +48,13 @@
     div.contact p{
         font-size: 1rem;
     }
+    #join-us-banner{
+        text-align: center ;
+        font-size: 0.9rem;
+    }
+
+
+
     }
 
 @media (min-width: 450px){

@@ -15,10 +15,22 @@ header, main, footer{
     background-color:bisque;
     text-align: center;
 }
+
+#join-us-banner{
+    text-align: center ;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.7rem;
+    color: #4962A5;
+    background-color: #fcca73;
+    display: none;
+}
+.company-name{
+    position: relative;
+}
 header div.company-name img{
     display:flex;
     position:absolute;
-    top:0;
+    top: 1px;
     max-width: 50px;
     margin-top: 0.5rem;
 }
