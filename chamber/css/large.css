@@ -21,10 +21,28 @@
         "join news-release news-release spotlights";
     }
     .main-grid #spotlights{
-        display: block;
-    }
+        display: block;    }
+    
+    #weather div#centered img{max-width: 4rem;}
+    #weather div#centered h2{
+        margin-left: 2rem;}
+    #weather #weather-data div{
+        font-size: 1.2rem;
+        margin: 0 0 0.4rem 2rem;    }
+    
+    
+    
+    
+    
+    div.contact p{
+        font-size: 1.2rem;}
+    .f-wrapper{
+        height: 6rem};
+    
+    
     .f-wrapper img{
-        max-height: 80px;
-    }
+        max-height: 80px;    }
+        
     div.address h2{font-size: 1.6rem;}
+    div.address p{font-size: 1rem;}
 }

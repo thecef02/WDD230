@@ -7,6 +7,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     background-color: bisque;
+    font-family:'Source Sans Pro', sans-serif ;
 }
 header, main, footer{
     margin: auto;
@@ -155,6 +156,7 @@ section> p{
 }
 #hero img{
     max-width: 100%;
+    /* max-height: 100%; */
 }
 #join{
     position: relative;
@@ -197,11 +199,34 @@ section> p{
 #join{display: none;}
 #join{grid-area: join;}
 #event{grid-area: event;}
+
+
+
+
+/************* WEATHER SECTION*********/
 #weather{grid-area: weather;}
-
-
-
-
+#weather img{
+    max-width: 4rem;
+    float: left;
+    margin-left: 1rem;
+}
+div#centered{
+    background-color: #fcca73;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 0 ;}
+div#centered h2{
+    margin-left: 2rem;}
+#weather-desc {
+    font-weight: 600;
+    margin: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #555;
+}
+#weather #weather-data div{
+    text-align: left;
+    margin: 0 0 0.4rem 3rem;
+}
 
 /*   footer */
 
@@ -223,14 +248,13 @@ footer div.copyright{
     border: 2px solid #4962a5;
     border-top:none;
 }
-.address{border-bottom: 2px solid #314781;}
+.address{border-bottom: 2px solid #555;}
 div.address h2{
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.5rem;
 }
 div.address p{
-    font-size: 0.8rem;
-}
+    font-size: 0.8rem;}
 div.contact{
     display: flex;
     flex-direction: column;
