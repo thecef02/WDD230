@@ -54,7 +54,7 @@
         max-height: 40px;}
     .f-wrapper{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 10rem;
     }
     div.contact p{
