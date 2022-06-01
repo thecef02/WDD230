@@ -1,8 +1,11 @@
 
-
+h1, p{
+    text-align: center;
+}
 picture{
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 img{
