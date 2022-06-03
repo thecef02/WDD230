@@ -264,11 +264,54 @@ div.contact p{
     font-size: 0.8rem;
 }
 
+.discover-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 1.3rem;
+}
+.discover-holder img[data-src] {
+    filter: blur(0.1em);
+}
+.discover-holder picture img{
+    border: 1px solid #000; 
+    filter: blur(0em); 
+    transition: filter 1.0s;
+}
+.discover-holder p{
+    width: 50rem;
+}
+.discover-holder .sep-holder{
+    display: flex;
+    flex-direction: row;
 
+}
+.discover-holder .sep1, .discover-holder .sep3{
+    width: 100px;
+    height: 5px;
+    background-color: #fcca73;
 
+}
+.discover-holder .sep1{
+    border-radius: 2px 0px 0px 2px;
+    margin-right: 5px;
+}
 
+.discover-holder .sep2{
+    width: 5px;
+    height: 5px;
+    background-color: #4962a5 ;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.discover-holder .sep3{
+    border-radius: 0px 2px 2px 0px;}
 
-
-
-
-
+.discover-holder {
+    padding: 1rem 0rem;
+}
+.discover-holder aside{
+    font-size: 20px;
+    font-weight: bold;
+}
