@@ -34,9 +34,12 @@ const multiDays = document.querySelector(".multi-days");
 let lastVisited = Number(window.localStorage.getItem("visits-ls"));
 
 function getNumberOfDays(){
-    let oneDay = (1000*60*60*24)
-    difference_ms = now - lastVisited
-    return Math.round(difference_ms/oneDay);
+    if (lastVisited != 0){
+        let oneDay = (1000*60*60*24)
+        difference_ms = now - lastVisited
+        return Math.round(difference_ms/oneDay);
+    }
+    return 0
 }
 numVisits = getNumberOfDays()
 
@@ -48,7 +51,7 @@ if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
 } else {
     todayDisplay.textContent = "This is your first visit!";
-	visitsDisplay.textContent = "This is your first visit!";
+	//visitsDisplay.textContent = "This is your first visit!";
 }
 
 // increment the number of visits.
