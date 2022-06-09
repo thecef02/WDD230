@@ -163,13 +163,14 @@ section> p{
 }
 .button-join{
     position: absolute;
-    width: 7rem;
+    /* width: 7rem; */
     height: 2rem;
     font-weight: 900;
     background-color: #fcca73;
     border-radius: 0.8rem;
     border: 1px solid;
     box-shadow: 0px 0px 30px #333;
+    padding: 0 1.5rem ;
 }
 #hero-sec-button{
     bottom: 20px;
@@ -230,7 +231,19 @@ div#centered h2{
 
 /*   footer */
 
+/*     join us     */
+#form-join{
+    max-width: 29rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+#sec-join{
+    min-height: 8rem;
+    margin-bottom: 4rem;
+}
 
+
+/*                  */ 
 
 footer{
     margin-top: 1rem;
@@ -242,6 +255,8 @@ footer{
     border: 2px solid #4962a5;
     border-radius: 5px 0px 0px 5px;
     border-bottom: none;
+    
+    
 }
 footer div.copyright{
     background-color: #7F889F;
@@ -255,7 +270,10 @@ div.address h2{
 }
 div.address p{
     font-size: 0.8rem;}
-div.contact{
+
+.f-logo, .contact, .address{width: 235px;margin: auto;}
+
+    div.contact{
     display: flex;
     flex-direction: column;
     justify-content: center;

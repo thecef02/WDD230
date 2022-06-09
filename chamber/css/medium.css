@@ -55,7 +55,7 @@
     .f-wrapper{
         display: flex;
         justify-content: space-around;
-        height: 10rem;
+        height: 8rem;
     }
     div.contact p{
         font-size: 0.8rem;
