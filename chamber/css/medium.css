@@ -89,6 +89,15 @@
     .b-shadow:hover{
         box-shadow: 0 0 50px #ffff00;
     }
+
+    form label.radio{
+        padding: .3rem 0;
+    }
+    form label.lbl input, form label.lbl textarea{
+        padding: .3rem;
+    }
+
+
 }       
 
 

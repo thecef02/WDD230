@@ -58,27 +58,40 @@
     </header>
     <main>
         <section id="sec-join">
-            <form method="get" action="thankyou.html"  id="form-join">
+            <form method="get" action="thankyou.html" id="form-join">
                 <fieldset>
                     <legend>Applicant Information</legend>
-                    <label>First Name* <input type="text" name="fname" required> </label>
-                    <label>Last Name* <input type="text" name="lname" required> </label>
-                    <label>Title <input type="text" name="title" pattern="^[a-zA-Z\s\-\.]{3,}$"> </label>
-                    <label>Email* <input type="email" name="email" placeholder="someone@provider.com" required> </label>
-                    <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required> </label>
-                    <label>Business name <input type="text" name="businessname" required> </label>
-                    <label>Business description <input type="text" name="businessdesc" required> </label>
-                    <label><input type="text" name="datetime" id="datetime-loaded" hidden > </label>
+                    <label class="lbl">First Name* <input type="text" name="fname" required> </label>
+                    <label class="lbl">Last Name* <input type="text" name="lname" required> </label>
+                    <label class="lbl">Title <input type="text" name="title" pattern="[a-zA-Z-\s]{7,}"> </label>
+                    <label class="lbl">Email* <input type="email" name="email" placeholder="someone@provider.com"
+                            required> </label>
+                    <label class="lbl">Phone* <input type="tel" name="phone" pattern="[0-9]{,}" placeholder="1235551234"
+                            required> </label>
+                    <label class="lbl">Business name* <input type="text" name="businessname" required> </label>
+
+                    <label><input type="text" name="datetime" id="datetime-loaded" hidden> </label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership</legend>
-                    <label><input type="radio" id="nonprofit" name="membership" value="np"> Non-profit Membership</label>
-                    <label><input type="radio" id="bronze" name="membership" value="br"> Bronze Membership</label>
-                    <label><input type="radio" id="silver" name="membership" value="si"> Silver Membership</label>
-                    <label><input type="radio" id="gold" name="membership" value="go"> Gold Membership</label>
+                    <div>
+                        <label class="radio"><input type="radio" id="nonprofit" name="membership" value="np"> Non-profit
+                            Membership</label>
+                        <label class="radio"><input type="radio" id="bronze" name="membership" value="br"> Bronze
+                            Membership</label>
+                        <label class="radio"><input type="radio" id="silver" name="membership" value="si"> Silver
+                            Membership</label>
+                        <label class="radio"><input type="radio" id="gold" name="membership" value="go"> Gold
+                            Membership</label>
+                    </div>
                 </fieldset>
-
-                <input type="submit" value="Join the chamber of commerce" class="button-join">
+                <fieldset>
+                    <label class="lbl lbl-desc">Business description
+                        <textarea class="lbl lbl-desc" id="txt" name="Business Description" rows="5" cols="65"
+                            maxlength="500" ></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Join the chamber of commerce" class="button-join button-join-join-pg">
 
             </form>
 
