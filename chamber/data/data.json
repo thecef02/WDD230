@@ -1,0 +1,111 @@
+[
+    {
+        "name": "Shafer Construction",
+        "address": "123 Main street",
+        "city":"Salt Lake",
+        "state":"UT",
+        "zip":"84108",
+        "phone":"801-920-6563",
+        "website":"https://shaferconstruction.org/",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo236687-1593793517.jpg?filter=LOC249x165",
+        "rating":33,
+        "membershipLevel":1
+    },
+    {
+        "name": "Lakeshore Construction, Llc.",
+        "address": "456 State Dr",
+        "city":"Salt Lake",
+        "state":"UT",
+        "zip":"84104",
+        "phone":"801-372-4577",
+        "website":null,
+        "imageUrl":"https://img.ksl.com/ksllocal/logo168811-1523570887.jpg?filter=LOC249x165",
+        "rating":46,
+        "membershipLevel":2
+    },
+    {
+        "name": "Integrity Painting & Design, LLC",
+        "address": "789 Redwood rd",
+        "city":"American Fork",
+        "state":"UT",
+        "zip":"84108",
+        "phone":"801-915-2789",
+        "website":"https://www.instagram.com/integritypaintinganddesignllc/?utm_medium=copy_link",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo112363-1613402165.jpg?filter=LOC249x165",
+        "rating":12,
+        "membershipLevel":2
+    },
+    {
+        "name": "Cheap Landscaping Llc",
+        "address": "159 Independence Dr",
+        "city":"American Fork",
+        "state":"UT",
+        "zip":"84003",
+        "phone":"801-235-8974",
+        "website":"https://cheaplandscapingllc.com/",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo192060-1642606155.jpg?filter=LOC249x165",
+        "rating":98,
+        "membershipLevel":1
+    },
+    {
+        "name": "Revive Custom Renovations",
+        "address": "654 Noth Ave",
+        "city":"Provo",
+        "state":"UT",
+        "zip":"84601",
+        "phone":"801-369-2154",
+        "website":"https://revivecustomrenovations.com/",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo251937-1648754371.jpg?filter=LOC249x165",
+        "rating":87,
+        "membershipLevel":2
+    },
+    {
+        "name": "HEX X Contracting",
+        "address": "894 South Bld",
+        "city":"Orem",
+        "state":"UT",
+        "zip":"84057",
+        "phone":"801-367-9865",
+        "website":null,
+        "imageUrl":"https://img.ksl.com/ksllocal/logo238368-1606934137.jpg?filter=LOC249x165",
+        "rating":89,
+        "membershipLevel":3
+    },
+    {
+        "name": "Scorpion Property Repair",
+        "address": "987 East Bay",
+        "city":"Vineyard",
+        "state":"UT",
+        "zip":"84254",
+        "phone":"801-258-9841",
+        "website":"https://scorpion.com/",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo252919-1652306013.jpg?filter=LOC249x165",
+        "rating":95,
+        "membershipLevel":2
+    },
+    {
+        "name": "Millenio Contracting",
+        "address": "698 Millenio Bld",
+        "city":"Spanish Fork",
+        "state":"UT",
+        "zip":"84660",
+        "phone":"801-347-8457",
+        "website":"https://milleniohouse.com/",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo252503-1650682213.jpg?filter=LOC249x165",
+        "rating":78,
+        "membershipLevel":3
+    },
+    {
+        "name": "Best Handyman LLC",
+        "address": "9987 Handy Way",
+        "city":"Hurriman",
+        "state":"UT",
+        "zip":"84096",
+        "phone":"801-874-9858",
+        "website":"https://BestHandyman.com/",
+        "imageUrl":"https://img.ksl.com/ksllocal/logo220588-1534348625.jpg?filter=LOC249x165",
+        "rating":95,
+        "membershipLevel":2
+    }
+    
+]
