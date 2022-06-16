@@ -314,14 +314,13 @@ footer{
 }
 .f-wrapper{
     display: block;
-    height: 13rem;
+    height: 14rem;
     background-color: #7F889F;
     border: 2px solid #4962a5;
     border-radius: 5px 0px 0px 5px;
     border-bottom: none;
-    
-    
 }
+
 footer div.copyright{
     background-color: #7F889F;
     border: 2px solid #4962a5;
@@ -372,7 +371,7 @@ div.contact p{
 .discover-holder .sep1, .discover-holder .sep3{
     width: 100px;
     height: 5px;
-    background-color: #fcca73;
+    background-color: rgb(252, 202, 115);
 
 }
 .discover-holder .sep1{
@@ -383,7 +382,7 @@ div.contact p{
 .discover-holder .sep2{
     width: 5px;
     height: 5px;
-    background-color: #4962a5 ;
+    background-color: rgb(73, 98, 165) ;
     border-radius: 2px;
     margin-right: 5px;
 }
@@ -397,3 +396,83 @@ div.contact p{
     font-size: 20px;
     font-weight: bold;
 }
+
+
+
+/*************  Directory  ***********/
+
+.grid-table-switcher{
+    margin-top: 1rem;
+}
+.grid-table-switcher button{
+    border: none;
+    width: 34px;
+    height: 34px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(295px, 1fr));
+}
+
+.grid section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #212480;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.5);
+}
+.grid section > p {
+    min-height: 10px;
+    margin: 0;
+    font-family:'Source Sans Pro', sans-serif ;
+}
+.grid section div{
+    display: flex;
+    /* width:fit-content; */
+}
+.grid section div h3{
+    margin: auto;
+}
+.grid img {
+    margin: 0.8rem ;
+    max-width: 380px;
+    box-shadow: 0 0 30px #777;
+    height: 100px;
+    border: 1px solid #333;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+.list section {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+  
+}
+.list section > * {
+	text-align: left;
+}
+.list section img {
+	display: none; /* smaller viewports only */
+}
+.list section:nth-child(odd){
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
