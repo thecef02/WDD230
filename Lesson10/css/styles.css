@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif ;
+    text-align: center;
+    background-color: black;
+    color: aqua;
+}
+
+main{
+    margin: auto;
+    max-width: 600px;
+    min-height: 500px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+h1{
+    margin-bottom: 2rem;
+
+}
+header{
+    background-color:rgba(73, 73, 73, 0.877) ;
+    margin: auto;
+}
+main p, h2, h1, img{
+    margin-bottom: 2rem;
+}
+main p span{
+    color: rgb(179, 8, 8);
+}
