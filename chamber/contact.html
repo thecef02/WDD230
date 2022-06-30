@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
+
 </head>
 
 <body>
@@ -45,7 +46,7 @@
             <ul id="primaryNav">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li>
                     <a href="https://www.facebook.com" target="_blank">
@@ -57,56 +58,41 @@
         </nav>
     </header>
     <main>
-        <section id="sec-join">
-            <form method="get" action="thankyou.html" id="form-join">
-                <fieldset>
-                    <legend>Applicant Information</legend>
-                    <label class="lbl">First Name* <input type="text" name="fname" required> </label>
-                    <label class="lbl">Last Name* <input type="text" name="lname" required> </label>
-                    <label class="lbl">Title <input type="text" name="title" pattern="[a-zA-Z-\s]{7,}"> </label>
-                    <label class="lbl">Title <input type="text" name="title" pattern="[A-Za-z19]{5}"> </label>
-                    <label class="lbl">Email* <input type="email" name="email" placeholder="someone@provider.com"
-                            required> </label>
-                    <label class="lbl">Phone* <input type="tel" name="phone" pattern="[0-9]{,}" placeholder="1235551234"
-                            required> </label>
-                    <label class="lbl">Business name* <input type="text" name="businessname" required> </label>
+        <section id="contact">
+            <div id="contact-form">
+                <h2>CONTACT FORM</h2>
+                <p>* Indicates required field</p>
+                <form method="get" action="thankyou.html" id="form-join">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label class="lbl">First Name* <input type="text" name="fname" required> </label>
+                        <label class="lbl">Last Name* <input type="text" name="lname" required> </label>
+                        <label class="lbl">Email* <input type="email" name="email" placeholder="someone@provider.com"
+                                required> </label>
+                    </fieldset>
+                    <input type="submit" value="Get in contact" class="button-join button-join-join-pg">
 
-                    <label><input type="text" name="datetime" id="datetime-loaded" hidden> </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Membership</legend>
-                    <div>
-                        <label class="radio"><input type="radio" id="nonprofit" name="membership" value="np"> Non-profit
-                            Membership</label>
-                        <label class="radio"><input type="radio" id="bronze" name="membership" value="br"> Bronze
-                            Membership</label>
-                        <label class="radio"><input type="radio" id="silver" name="membership" value="si"> Silver
-                            Membership</label>
-                        <label class="radio"><input type="radio" id="gold" name="membership" value="go"> Gold
-                            Membership</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label class="lbl lbl-desc">Business description
-                        <textarea class="lbl lbl-desc" id="txt" name="Business Description" rows="5" cols="65"
-                            maxlength="500" ></textarea>
-                    </label>
-                </fieldset>
-                <input type="submit" value="Join the chamber of commerce" class="button-join button-join-join-pg">
+                </form>
+            </div>
 
-            </form>
+            <div id="contact-us">
+                <h2>Contact us</h2>
+                <h3>Address</h3>
+                <p>High Peak Chamber of Commerce</p>
+                <p>123 Main St</p>
+                <p>American Fork, Utah</p>
+                <h3>Phone</h3>
+                <p><a href="tel:801-252-2525" type="call" >801-252-2525</a></p>
+                <h3>Email</h3>
+                <p>chamber@highpeak.gov</p>
 
-
+            </div>
 
         </section>
-
-
-
-
     </main>
     <footer>
         <div class="f-wrapper">
-            <div class="f-logo">
+            <div>
                 <img src="images/logo.webp" alt="logo">
             </div>
             <div class="address">
@@ -123,8 +109,8 @@
             <p>&copy; <span id="year">2022</span> | Cristian Fernandez | Utah</p>
         </div>
     </footer>
-    <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
+
+
 </body>
 
 </html>

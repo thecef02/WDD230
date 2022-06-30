@@ -28,6 +28,8 @@
     }
     .main-grid #spotlights{
         display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
     }
     .main-grid #spotlights section{flex: 1;}
     
@@ -125,5 +127,22 @@
     .list section a{
         width: 35%;
         margin: 0;
+    }
+    #contact{
+        /* display: flex; */
+        flex-direction: row;
+        /* margin-top: 1rem; */
+    }
+    
+    #contact-form{
+        /* flex: 2; */
+        max-width: 50%;
+        /* background-color: #00ff2a; */
+        /* margin-right: 0.2rem; */
+    }
+    #contact-us{
+        min-width: 50%;
+        border-left: solid 2px rgb(73, 98, 165);
+        border-top: none;
     }
 }

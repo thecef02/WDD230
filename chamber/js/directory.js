@@ -2,16 +2,18 @@ const btnGridview = document.getElementById('gridview');
 const btnListview = document.getElementById('listview');
 const display = document.querySelector("#mainDiv");
 
-btnGridview.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-btnListview.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("list");
-	display.classList.remove("grid");
-});
+if ( document.URL.includes("directory.html") ){
+  btnGridview.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+  });
+  btnListview.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("list");
+    display.classList.remove("grid");
+  });
+};
 const requestFile = 'data/data.json';
 const cards = document.querySelector('.cards');
 
@@ -57,7 +59,14 @@ function displayBusiness(businessList) {
     card.appendChild(phone);
     card.appendChild(website);
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.grid').appendChild(card);
+    
+  if ( document.URL.includes("index.html") ){
+    if (businessList.membershipLevel == 1){
+      document.querySelector('#spotlights.grid').appendChild(card);
+    };
+  } else{
+      document.querySelector('div.grid').appendChild(card);
+  };
 }
 
 
