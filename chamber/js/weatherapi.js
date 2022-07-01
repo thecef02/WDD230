@@ -5,6 +5,7 @@ const currentTemp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weather-desc');
 const windSpeed = document.querySelector('#speed');
+const speedType = document.querySelector('#speed-type');
 const cf = document.querySelector("#tempType");
 const btnCF = document.querySelector("#cf");
 btnCF.addEventListener("click",apiFetch);
@@ -39,9 +40,13 @@ function displayResults(weatherData){
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc.split(' ').map(w => w[0].toUpperCase() + w.substring(1).toLowerCase()).join(' ');;
-
-    windSpeed.textContent = weatherData.wind.speed.toFixed(1);
-    
+    if (cf.textContent == "°C" | cf.textContent == ""){
+      windSpeed.textContent = weatherData.wind.speed.toFixed(1);
+      speedType.textContent = "mph"
+    } else{
+      speedType.textContent = "km/h"
+      windSpeed.textContent = (weatherData.wind.speed * 1.60934).toFixed(1);
+    };
 }
 function setTempType(weatherData){
   //weatherData.main.temp = weatherData.main.temp - 30; test to see if it works in case the temp > 50
