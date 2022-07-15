@@ -5,32 +5,49 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WDD230 Final Project | Cristian Fernandez</title>
+  <title>WDD230 Final Project | The Temple Inn & Suites | Cristian Fernandez</title>
   <meta name="description"
     content="Final Project page for WDD230: Web Frontend Development at Brigham Young University-Idaho" />
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?&family=Titillium+Web&family=Source+Sans+Pro&display=swap"
+  <link href="https://fonts.googleapis.com/css2?&family=Ubuntu:ital@1&display=swap&family=Source+Sans+Pro&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
   <link rel="shortcut icon" href="images/favicon.ico">
   <!-- Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="css/small.css" />
   <link rel="stylesheet" href="css/medium.css" />
   <link rel="stylesheet" href="css/large.css" />
-  
+
 </head>
 
 <body>
   <header>
     <div class="company-name">
-      <h1>High Peak Chamber</h1>
       <img src="images/logo.webp" alt="logo" />
-      <aside>dia y hora</aside>
+      <h1>The Temple Inn & Suites</h1>
+      <div>
+        <aside>dia y hora</aside>
+      </div>
     </div>
     <nav>
+
+      <ul id="primaryNav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li>
+          <a href="https://www.facebook.com" target="_blank">
+            <img class="media" src="images/facebook.webp" alt="facebook" /></a>
+          <a href="http://www.Instagram.com" target="_blank">
+            <img class="media" src="images/instagram.webp" alt="instagram" /></a>
+        </li>
+      </ul>
       <div id="hamburgerBtn">
         <button>
           <span>&#9776;</span>
@@ -40,36 +57,76 @@
         <a href="http://www.Instagram.com" target="_blank">
           <img class="media" src="images/instagram.webp" alt="instagram" /></a>
       </div>
-      <ul id="primaryNav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li>
-          <a href="https://www.facebook.com" target="_blank">
-            <img class="media" src="images/facebook.webp" alt="facebook" /></a>
-          <a href="http://www.Instagram.com" target="_blank">
-            <img class="media" src="images/instagram.webp" alt="instagram" /></a>
-        </li>
-      </ul>
     </nav>
   </header>
   <main>
+    <section class="main-form">
+      <picture class="hero-picture">
+        <img src="images/main-pic-380.webp" alt="main picture" sizes="80vw" 
+          srcset="images/main-pic-380.webp 380w,
+                  images/main-pic-820.webp 610w,
+                  images/main-pic-1080.webp 820w">
+
+      </picture>
+      
+      <form method="get" action="thankyou.html" id="form-make-reservation">
+        <fieldset class="main-fields">
+          <div class="sub-main-fields">
+          <div class="fields">
+            <span>Destination*</span>
+            <select class="select-lbl" name="destiantion" required>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <!-- <label class="lbl"><input type="" name="destination" required> </label> -->
+          </div>
+          <div class="fields">
+            <span>Check in*</span>
+            <label class="lbl"><input type="date" name="check-in" required> </label>
+          </div>
+        </div>
+        <div class="sub-main-fields">
+          <div class="fields">
+            <span>Check out*</span>
+            <label class="lbl"><input type="date" name="check-out" required> </label>
+          </div>
+
+          <div class="fields">
+            <span>Room / guest*</span>
+            <select class="select-lbl" name="room" required>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+        </div>
+        </fieldset>
+        <input type="submit" value="Search room" class="button-submit">
+
+      </form>
+
+    </section>
+
+
+
 
   </main>
   <footer>
     <div class="f-wrapper">
-      <div>
-      <img src="images/logo.webp" alt="logo">
-    </div>
+      <div class="f-logo">
+        <img src="images/logo.webp" alt="logo">
+      </div>
       <div class="address">
-        <h2>High Peak Chamber</h2>
-        <p>123 Main St</p>
-        <p>American Fok, UT</p>
+        <h2>The Temple Inn & Suites</h2>
+        <a href="https://goo.gl/maps/mwkH1ERpTsoVr86j7"><p>4800 Montgomery Ln #300<br>
+        Bethesda, MD</p></a>
       </div>
       <div class="contact">
-        <p>Info@highpeakchamber.com</p>
-        <p>+(801) 123-4567</p>
+        <p>Info@TempleInnSuites.com</p>
+        <p>+(555) 123-4567</p>
       </div>
     </div>
     <div class="copyright">
@@ -78,8 +135,8 @@
   </footer>
   <script src="js/scripts.js"></script>
 
-  
-  
+
+
 </body>
 
 </html>

@@ -1,48 +1,31 @@
 /* large size */
 @media (min-width: 620px){
-    h1{font-size: 2.5rem;}   
-    h2{font-size: 1.5rem;} 
-    h3{font-size: 1.2rem;} 
+    h1{font-size: 2rem;}   
+    h2{font-size: 1.75rem;} 
+    h3{font-size: 1.5rem;} 
+
     header nav ul li a{font-size: 1.5rem;    }
-    footer{font-size: 1.4rem;}
+    
     header div.company-name img{max-width: 100%;}
     nav ul{display: flex;}
     nav ul li{flex: 1 1 auto;}
     header nav #hamburgerBtn {display: none;}
-    nav ul#primaryNav{display: flex;} 
-    header :nth-child(1) aside{font-size: 1rem;}
-    #join{display: block;}
-    .main-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-        "event hero hero spotlights"
-        "weather hero hero spotlights"
-        "join news-release news-release spotlights";
+    nav ul#primaryNav{display: flex;}
+
+    .company-name img {max-height: 50px}
+    .contact p{
+        font-size: 1rem;
     }
-    .main-grid #spotlights{
-        display: block;    }
-    
-    #weather div#centered img{max-width: 4rem;}
-    #weather div#centered h2{
-        margin-left: 2rem;}
-    #weather #weather-data div{
-        font-size: 1.2rem;
-        margin: 0 0 0.4rem 2rem;    }
-    
-    
-    
-    
-    
-    div.contact p{
-        font-size: 1.2rem;}
-    .f-wrapper{
-        height: 6rem};
-    
-    
-    .f-wrapper img{
-        max-height: 80px;    }
-        
-    div.address h2{font-size: 1.6rem;}
-    div.address p{font-size: 1rem;}
+
+
+    #form-make-reservation{
+        position: absolute;
+        top: 1rem;
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .main-form img{
+        width: 100%;
+    }
 }

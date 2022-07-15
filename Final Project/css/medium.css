@@ -1,106 +1,46 @@
-/* medium size */
+/* medium size   368px*/
 @media (min-width: 23em){
-    #join-us-banner{
-        text-align: center ;
-        font-size: 0.9rem;
-    }
-    h1{font-size: 1.9rem;}   
-    h2{font-size: 1.2rem;} 
-    h3{font-size: 1rem;}
+    h1{font-size: 1.5rem;}   
+    h2{font-size: 1.5rem;} 
+    h3{font-size: 1.25rem;}
     ul{font-size: 1.2rem;}
-
 
     header nav ul li a{
         border: none;
         font-size: 1.1rem;
     }
-    header :nth-child(1) aside{font-size: 0.8rem;}
-    #join{display: block;}
-    .main-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-        "hero hero hero"
-        "news-release news-release news-release"
-        "spotlights spotlights spotlights"
-        "join  join join"
-        "event event weather";
-    }
-    .main-grid #spotlights{
-        display: flex;
-        flex-wrap: wrap;
-        /* flex-direction: column; */
-    }
-    .main-grid #spotlights section{flex: 1;}
+    /* .company-name h1{width: 100%;} */
     
-
-    /*********  WEATHER SECTION *********/
-    #weather div#centered img{max-width: 2.5rem;}
-    #weather div#centered h2{
-        margin-left: 0.5rem;}
-    #weather #weather-data div{
+    .company-name aside{display: contents;}
+    .company-name div{
+        display: block;
+        text-align: end;
         font-size: 0.7rem;
-        margin: 0 0 0.4rem 1rem;
+        align-items:flex-end;
+    }
+    header nav ul li a{
+        border: none;
+        font-size: 1.1rem;
     }
 
-
-    div.address p{
-        font-size: 0.6rem;
-    }
-    div.address h2{font-size: 1.3rem;}
-    div.address p{font-size: 0.9rem;}
-    div.contact p{
-        font-size: 0.8rem;
-    }
+    
     .f-wrapper img{
-        max-height: 40px;}
-    .f-wrapper{
+        max-height: 50px;
+    }
+    .main-fields{
         display: flex;
-        justify-content: space-around;
-        height: 8rem;
+        flex-direction: row;
+        border: none;
     }
-    div.contact p{
-        font-size: 0.8rem;
+    .fields .lbl input,.fields .select-lbl{
+        min-width: 8rem;
     }
-
-    footer{font-size: 1.2rem;}
-    /* nav ul{display: flex;}
-    nav ul li{flex: 1 1 auto;}
-    nav button {display: none;}
-    nav ul#primaryNav{display: flex;}  */
-    .f-wrapper div{
-        width: 33.3%;
+    .fields{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 1rem;
     }
-    .opa:hover{
-        opacity: 60%;
-        }
-
-    .b-round:hover{
-        border-radius: 30px 50px 180px 220px;
-    }
-    .blur:hover{
-        filter: blur(1px) grayscale(75%);
-        border-radius: 80px 80px 80px 80px;
-    }
-
-    .trans:hover{
-        border-radius: 100px; 
-        width: 60%;
-        margin: 0 3em .5em 0;
-        float:left;
-        shape-outside: circle();
-    }
-    .b-shadow:hover{
-        box-shadow: 0 0 50px #ffff00;
-    }
-
-    form label.radio{
-        padding: .3rem 0;
-    }
-    form label.lbl input, form label.lbl textarea{
-        padding: .3rem;
-    }
-
 }       
 
 
@@ -108,41 +48,12 @@
 
 
 @media (min-width: 450px){
-    header div.company-name img{max-width: 100px;}
-    .f-wrapper img{
-        max-height: 60px;}
+    h1{font-size: 1.5rem;}
 
-    .list section{
-        flex-direction: row;
-        min-height: 3rem;
+    .sub-main-fields{
+        display: flex;
     }
-    .list section div{
-        width: 35%;
-        margin-left: 0.5rem;
-    }
-    .list section p{
-        width: 15%;
-        margin: 0;
-    }
-    .list section a{
-        width: 35%;
-        margin: 0;
-    }
-    #contact{
-        /* display: flex; */
-        flex-direction: row;
-        /* margin-top: 1rem; */
-    }
-    
-    #contact-form{
-        /* flex: 2; */
-        max-width: 50%;
-        /* background-color: #00ff2a; */
-        /* margin-right: 0.2rem; */
-    }
-    #contact-us{
-        min-width: 50%;
-        border-left: solid 2px rgb(73, 98, 165);
-        border-top: none;
+    .main-form img{
+        max-width: 100%;
     }
 }
