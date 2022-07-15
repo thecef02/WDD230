@@ -3,7 +3,7 @@ const datefield = document.querySelector("aside");
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 datefield.innerHTML = `<em>${fulldate}</em>`;
-
+let templeData = {}
 
 /*  humburger menu  */
 function toggleMenu() {
@@ -12,3 +12,33 @@ function toggleMenu() {
 }
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu;
+
+
+/* load the options for the destination select */
+let destiantionSelect = document.querySelector('#destiantion');
+const requestFile = 'data/data.json';
+fetch(requestFile)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    templeData = jsonObject;
+    templeData.forEach(addTemple)
+  });
+
+
+
+
+/*let options = templeData.forEach(temple => `<option value=${temple.name}>${temple.name}</option>`).join('\n');*/
+
+
+function addTemple(temple){
+    const html = `<option value="${temple.name}">${temple.name}</option>\n`;
+    destiantionSelect.innerHTML += html;
+}
+console.log(destiantionSelect.innerHTML)
+// templeData.forEach((temple) => {
+//      const html = `<option value=${temple.name}>${temple.name}</option>\n`;
+//      destiantionSelect.innerHTML += html;    
+//  });
+
