@@ -138,6 +138,9 @@ header nav ul.open {display: block;}
     min-height: 2.5rem;
     margin: auto;
     border-radius: 10px;
+    border: 1px solid #000;
+    border-top: 1px solid rgba(255,255,255,0.8);
+    border-left: 1px solid rgba(255,255,255,0.8);
 }
 .fields{
     display: block;
@@ -145,13 +148,17 @@ header nav ul.open {display: block;}
     align-items: flex-start; */
     margin-right: 1rem;
     text-align: left;
+    background-color: #000;
+    border-radius: 5px 5px 0px 0px;
+    
 }
 .fields span{
     font-size: .7rem;
     color: rgba(255,255,255,0.8);
+    margin-left: 0.3rem;
 }
 .fields .lbl input,.fields .select-lbl{
-    min-width: 9rem;
+    width: 9rem;
     min-height: 2.5rem;
     font-size: .9rem;
     font-family: 'Source Sans Pro', 'sans-serif','currier';
@@ -161,9 +168,17 @@ header nav ul.open {display: block;}
     margin-top: 0.2rem;
 }
 
+.temple-info{
+    position: absolute;
+    top: 6rem;
+    margin-left: 5rem;
+}
 
-
-
+.temple-info img{
+    margin: 0;
+    height: 200px;
+    border: 5px solid white;
+}
 
 
 

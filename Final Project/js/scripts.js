@@ -26,19 +26,26 @@ fetch(requestFile)
     templeData.forEach(addTemple)
   });
 
-
-
-
-/*let options = templeData.forEach(temple => `<option value=${temple.name}>${temple.name}</option>`).join('\n');*/
-
-
 function addTemple(temple){
     const html = `<option value="${temple.name}">${temple.name}</option>\n`;
     destiantionSelect.innerHTML += html;
 }
-console.log(destiantionSelect.innerHTML)
-// templeData.forEach((temple) => {
-//      const html = `<option value=${temple.name}>${temple.name}</option>\n`;
-//      destiantionSelect.innerHTML += html;    
-//  });
+
+destiantionSelect.addEventListener("change",destiantionSelect_onChange);
+
+
+function destiantionSelect_onChange (){
+
+    console.log(destiantionSelect.value)
+
+}
+
+
+
+
+
+
+
+
+
 
