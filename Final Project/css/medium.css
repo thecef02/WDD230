@@ -51,11 +51,14 @@
         position: absolute;
         top: 10rem;
         margin-left: 2rem;
+        margin-top: 2rem;
     }
 
     .amenities ul{
         font-size: 12px;
     }
+
+
 
 
 
@@ -82,8 +85,11 @@
 
     .temple-info {
         top: 6rem;
+        margin-top: 0;
     }
 
-
+    .bed-holder{
+        width: 45%;
+    }
 
 }

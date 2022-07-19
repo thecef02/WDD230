@@ -66,16 +66,38 @@
         margin-left: 25%;
     } 
 
-    .weather-day, #five-days-weather :nth-child(3){
+    .weather-day{
         width: 20%;
         border-right: 1px solid #000;
     }
-    #five-days-weather :nth-child(5){
+    #five-days-weather>:nth-child(3){
+        border-right: 1px solid #000;
+    }
+    #five-days-weather>:nth-child(5){
         border-right: none ;
     }
     .weather-day h4{
         margin: 0;
     }
+    #five-days-weather>:nth-child(4), #five-days-weather>:nth-child(5){
+        margin-top: 0;
+        border-top: 0px;
+    }
+    #five-days-weather>:nth-child(1),#five-days-weather>:nth-child(2), #five-days-weather>:nth-child(3){
+        border-bottom: 0px;
+    }
+
+
+
+    .bed-holder{
+        width: 30%;
+    }
+
+
+
+
+
+
 
 
 }

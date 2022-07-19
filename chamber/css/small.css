@@ -262,7 +262,7 @@ label.lbl{
     font-weight: 600;
     text-align: left;
 }
-form label.lbl input, form label.lbl textarea{
+#form-join label.lbl input, form label.lbl textarea{
     display: block;
     font-size: 1rem;
     border-radius: 4px;

@@ -121,6 +121,7 @@ header nav ul.open {display: block;}
 }
 .main-form{
     position: relative;
+
 }
 .main-form picture img{
     width: 700px;
@@ -185,26 +186,62 @@ header nav ul.open {display: block;}
 }
 
 
+
+
+
+
+#services{margin-top: 2rem;}
 .amenities{
     display: block;
-    font-size: 10px;
     margin-left: 25px;
     text-align: left;
 }
-.amenities ul{margin-top: 1rem;}
-.amenities ul li{
-    text-decoration:dotted;
+.amenities ul, .amenities-list ul{
+    margin-top: 2rem;
+    background-color: #ddd;
+    border: 2px solid #888;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.5);
 }
+.amenities ul li, .amenities-list ul li{
+    font-size: 14px;
+    text-decoration:dotted;
+    margin-left: 1.4rem;
+}
+.amenities-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    margin-left: 4rem;
+    text-align: left;
+}
+.amenities-list ul{
+    justify-content: space-around;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mid-area{
     display: block;
-    margin-top: 1rem;
 }
 
 
 
 #weather{
     width: 100%;
-    background-color: aqua;
     padding-top: 1rem;
 }
 #five-days-weather{
@@ -213,27 +250,32 @@ header nav ul.open {display: block;}
     flex-wrap: wrap;
     margin-top: 1rem;
     align-items: stretch;
+    border: 1px dotted #000;
 }
 .weather-day {
     width: 33%;
     border-right: 1px solid #000;
 }
-#five-days-weather :nth-child(3){
+#five-days-weather>:nth-child(3){
     border-right: none ;
 }
+#five-days-weather>:nth-child(4), #five-days-weather>:nth-child(5){
+    margin-top: 1rem;
+    border-top: 1px dotted #000;
+}
+#five-days-weather>:nth-child(1),#five-days-weather>:nth-child(2), #five-days-weather>:nth-child(3){
+    border-bottom: 1px dotted #000;
+}
 .weather-day p{
-    margin-top: 0.6rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin: 0;
     font-size: 10px;
 }
-
-.weather-day h5{
-    padding-bottom: .5rem;
+.weather-day h5{color: var(--primary-color);}
+.weather-day h4{
+    padding-top: .5rem;
 }
-
-
-
-
-
 
 #adds-top div, #adds-bottom {
     width: 100%;
@@ -241,6 +283,175 @@ header nav ul.open {display: block;}
     border: 10px solid #bbe6e4;
 }
 
+#beds{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+.bed-holder{
+    margin: .5rem;
+
+    background-color:white;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+.bed-image{
+    width: 96%;
+    margin-top: 2%;
+    border-radius: 3px;
+}
+.bed-button{
+    margin: 1rem 2.5rem;
+    background-color: #2f4858;
+    padding: .6rem 0;
+    color: #fef19a;
+}
+.bed-para{
+    font-size: 14px;
+    margin: 0 .3rem;
+    height: 3rem;
+    
+    text-align: center;
+}
+
+/*   temple.html  */ 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(295px, 1fr));
+    margin: 2rem 0;
+    position: relative;
+}
+.grid section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #212480;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.5);
+}
+.grid section > p {
+    min-height: 10px;
+    margin: 0;
+    /* font-family:'Source Sans Pro', sans-serif ; */
+    font-size: .8rem;
+}
+.grid section div{
+    display: flex;
+}
+.grid section div h4{
+    margin: auto;
+    font-size: 1.2rem;
+}
+.grid img {
+    margin: 0.8rem ;
+    max-width: 380px;
+    box-shadow: 0 0 30px #777;
+    height: 100px;
+    border: 1px solid #333;
+}
+.float-div{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 4rem;
+}
+.grid details summary{
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.grid details p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*    reservation   */
+#form-reservation fieldset{
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+#form-reservation legend{
+    color:#445ba9;
+    font-weight: 800;
+    margin-left: 1rem;
+    text-align: left;
+    padding: 0 .5rem;
+}
+#form-reservation label.lbl{
+    display:block;
+    padding-top: .8rem;
+    font-weight: 600;
+    text-align: left;
+}
+#form-reservation label.lbl input, #form-reservation label.lbl textarea, 
+#form-reservation label.lbl select{
+    display: block;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #999;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--secondary-color);
+}
+#form-reservation label.radio{
+    display: block;
+    padding: .75rem 0;
+    text-align: left;
+    font-weight: 600;
+}
+#form-reservation label.lbl input:required {
+    border-left: solid 6px red;  
+}
+#form-reservation label.lbl input:required:valid{
+    border-left: solid 6px green;  
+}
+#form-reservation label.lbl-desc input{
+    padding: 3rem;
+}
+#form-reservation{
+    max-width: 29rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+#sec-reservation{
+    min-height: 8rem;
+    margin-bottom: 4rem;
+}
+.button-reservation{
+    margin: 2rem 0;
+    position:relative;
+    padding: 0 5% 0 5%;
+}
+
+.tks-sec{
+    margin-top: 1rem;
+    align-items: center;
+    padding: 5rem 0;
+}
+#form-reservation label.tks-join{
+    font-size: 40px;
+    margin-top: 2rem;
+    color: #4962a5;
+}
 
 
 
@@ -258,6 +469,13 @@ header nav ul.open {display: block;}
 
 
 
+
+
+/*  thankyou.html  */ 
+#tks{
+
+    margin: 3rem 0;
+}
 /* footer Css */
 
 .f-wrapper{
@@ -285,11 +503,14 @@ header nav ul.open {display: block;}
 .f-wrapper img{
     max-height: 30px;
 }
+.copyright{
+    margin: 3rem 0;
+}
 .copyright p{
     background-color: var(--txt-color);
     width: 50%;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 

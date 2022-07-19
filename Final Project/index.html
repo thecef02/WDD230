@@ -39,7 +39,7 @@
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="reservations.html">Reservations</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="temples.html">Temples</a></li>
+        <li><a href="temple.html">Temples</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li>
           <a href="https://www.facebook.com" target="_blank">
@@ -90,6 +90,7 @@
             <div class="fields">
               <span>Room / guest*</span>
               <select class="select-lbl" name="room" required>
+                <option value="">--Select Room--</option>
                 <option value="1 Room 1 Guess">1 Room 2 Guess</option>
                 <option value="1 Room 2 Guess">1 Room 1 Guess</option>
                 <option value="1 Room 3 Guess">1 Room 3 Guess</option>
@@ -110,7 +111,7 @@
         <img id="temple-img" src="" alt="Temple picture">
       </div>
     </section>
-    <h3>Specialized Services and Amenities</h3>
+    <h3 id="services">Specialized Services and Amenities</h3>
     <section class="amenities">
       <div>
         <ul>
@@ -139,39 +140,22 @@
     <section id="weather">
 
       <!-- https://api.openweathermap.org/data/2.5/forecast?q=Orem,UT,US&appid=a1cdf4d637caf46a9288686067728afa&units=imperial -->
-      <h3 id="city-weather">American<br>Weather</h3>
+      <h2 id="city-weather">American</h2>
+      <h3>Weather</h3>
       <div id="five-days-weather">
-        
-        <div class="weather-day">
-          <h5>Monday</h5>
-          <h4>94.3 °F</h4>
-          <img src="https://openweathermap.org/img/w/04d.png" alt="">
-          <p>Broken Clouds</p>
-        </div>
-        <div class="weather-day"><h1>hola</h1></div>
-        <div class="weather-day"><h1>hola</h1></div>
-        <div class="weather-day"><h1>hola</h1></div>
-        <div class="weather-day"><h1>hola</h1></div>
-        <!-- <img id="weather-icon" src="" alt="weather icon">
-        <h2><span id="temp"></span> <span id="tempType"></span></h2>
-        <div>
-          <button id="cf">°C/°F</button>
-        </div>
-      </div>
-      <div id="weather-desc">
-        weather-desc -->
+               
       </div>
 
     </section>
     <section id="adds">
       <div id="adds-top">
         <div>
-          <span>&#128161</span>
+          <span>&#128161;</span>
           <h3>Fexible Rates</h3>
           <p>We offer easy cancelation options.</p>
         </div>
         <div>
-          <span>&#128178</span>
+          <span>&#128178;</span>
           <h3>Best Rate Guarantee</h3>
           <p>We'll match any lower available rate.</p>
         </div>
@@ -179,14 +163,29 @@
 
 
       <div id="adds-bottom">
-        <span>&#11088</span>
+        <span>&#11088;</span>
         <h3>Earn Free Nights</h3>
         <p>Get a free night starting at just 3000 points.</p>
       </div>
     </section>
   </div>
     <section id="beds">
-beds
+      <div class="bed-holder">
+        <img class="bed-image" src="images/left.webp" alt="Picture of rooms">
+        <p class="bed-para">When you book direct, you get the lowest price.</p>
+        <div class="bed-button">Make reservation</div>
+      </div>
+      <div class="bed-holder">
+        <img class="bed-image" src="images/center.webp" alt="Picture of rooms">
+        <p class="bed-para">Check all our offers.</p>
+        <div class="bed-button">Make reservation</div>
+      </div>
+      <div class="bed-holder">
+        <img class="bed-image" src="images/right.webp" alt="Picture of rooms">
+        <p class="bed-para">Register now and complete two qualified stays, you'll get 10,000 bonus points.</p>
+        <div class="bed-button">Make reservation</div>
+      </div>
+
     </section>
   </main>
   <footer>
@@ -208,6 +207,7 @@ beds
     </div>
     <div class="copyright">
       <p>&copy; <span id="year">2022</span> | Cristian Fernandez | Utah</p>
+      <p id="last-update">Last saved on: </p>
     </div>
   </footer>
   <script src="js/scripts.js"></script>
