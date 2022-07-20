@@ -230,7 +230,7 @@ header nav ul.open {display: block;}
     justify-content: space-around;
     /* flex-wrap: wrap; */
     width: 90%;
-    margin-left: 3rem;
+    margin-left: 1rem;
     text-align: left;
 }
 .amenities-list ul{
