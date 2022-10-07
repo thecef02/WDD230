@@ -11,10 +11,17 @@
     nav ul li{flex: 1 1 auto;}
     header nav #hamburgerBtn {display: none;}
     nav ul#primaryNav{display: flex;}
+    .sub-main-fields{
+        display: flex;
+    }
+    .main-fields{flex-wrap: wrap;}
 
     .company-name img {max-height: 50px}
     .contact p{
-        font-size: 1rem;
+        font-size: 12px;
+    }
+    .f-wrapper{
+        display: flex;
     }
 
 
@@ -32,7 +39,10 @@
     .temple-info :nth-child(4){
         flex: none;
     }
-    .temple-info{        visibility: hidden;}
+    .temple-info{        
+        visibility: hidden;
+        top: 7rem;
+    }
     .temple-info img{
         display:block;
         margin: 1rem 0 0 2rem;
@@ -48,7 +58,7 @@
         width: 50%;}
     .amenities ul{
         font-size: 13px;
-        margin-left: 2rem;
+        margin: 0 .5rem;
     }
     .mid-area{
         display: flex;
@@ -89,14 +99,30 @@
 
 
 
+
+    .wedding ul{
+        line-height: 2rem;
+        max-width: 30%;
+        
+    }
+.wedding ul li{
+    font-size: 1rem;
+}
+
+
+
     .bed-holder{
         width: 30%;
     }
 
 
+    .room-type{
+        width: 30%;
+    }
 
-
-
+    .bottom div{
+        width: 25%;
+    }
 
 
 

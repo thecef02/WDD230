@@ -23,14 +23,16 @@
         font-size: 1.1rem;
     }
 
-    
+
     .f-wrapper img{
         max-height: 50px;
     }
     .main-fields{
         display: flex;
         flex-direction: row;
+        /* flex-wrap: wrap; */
         border: none;
+        /* width: 100%; */
     }
     .fields .lbl input,.fields .select-lbl{
         min-width: 8rem;
@@ -44,7 +46,7 @@
 
 
     .temple-info h3, .temple-info p{
-        color: var(--secondary-color);
+        color: #08f850;
     }
 
     .temple-info{
@@ -70,6 +72,8 @@
 
 
 
+
+
 }       
 
 
@@ -79,17 +83,30 @@
 @media (min-width: 450px){
     h1{font-size: 1.5rem;}
 
-    .sub-main-fields{
-        display: flex;
-    }
-
-    .temple-info {
-        top: 6rem;
-        margin-top: 0;
-    }
+    .contact{font-size: 14px;}
 
     .bed-holder{
         width: 45%;
     }
+    .wedding {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+    .wedding ul li {font-size: 1rem;}
+    .wedding-right-side{
+        width: auto;
+    }
 
+    .room-type{
+        width: 46%;
+    }
+    .bottom div{
+        width: 46%;
+    }
+    .buttons{
+        display: flex;
+    }
+    .buttons-help, .pointer{
+        visibility:visible;
+    }
 }

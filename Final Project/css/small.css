@@ -60,7 +60,7 @@ nav {
 nav ul {
     list-style-type: none;
 }
-header nav ul li a{
+nav ul li a{
     display: block;
     color: var(--txt-color);
     text-align: center;
@@ -68,11 +68,11 @@ header nav ul li a{
     font-size: 1.3rem;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-header nav ul li a :nth-child(1){
+nav ul li a :nth-child(1){
     border-top: 1px solid rgba(0,0,0,0.2);
 }
 
-header nav ul li a:hover{background-color: #2f4858;}
+nav ul li a:hover{background-color: #2f4858;}
 header nav button{
 
     margin: .2rem 2vw;
@@ -118,13 +118,14 @@ header nav ul.open {display: block;}
     display: block;
     /* flex-direction: row; */
     border: none;
+    width: 100%;
 }
 .main-form{
     position: relative;
 
 }
 .main-form picture img{
-    width: 700px;
+    width: 100%;
 }
 #form-make-reservation{
     position: absolute;
@@ -190,10 +191,25 @@ header nav ul.open {display: block;}
 
 
 
-#services{margin-top: 2rem;}
+
+
+
+
+
+/*   sevices  */
+#service-nav{
+    margin-top: 2rem;
+}
+#services{
+    margin-top: 1rem;
+    align-items: center;
+}
+#services h1{
+    margin-bottom: 1rem;
+}
 .amenities{
     display: block;
-    margin-left: 25px;
+    margin: 0 3rem;
     text-align: left;
 }
 .amenities ul, .amenities-list ul{
@@ -206,7 +222,7 @@ header nav ul.open {display: block;}
 .amenities ul li, .amenities-list ul li{
     font-size: 14px;
     text-decoration:dotted;
-    margin-left: 1.4rem;
+    margin: .1rem 1.4rem;
 }
 .amenities-list{
     display: flex;
@@ -214,7 +230,7 @@ header nav ul.open {display: block;}
     justify-content: space-around;
     /* flex-wrap: wrap; */
     width: 90%;
-    margin-left: 4rem;
+    margin-left: 1rem;
     text-align: left;
 }
 .amenities-list ul{
@@ -223,15 +239,52 @@ header nav ul.open {display: block;}
 }
 
 
+/*    weding  */
+.wedding{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* position: absolute; */
+
+}
 
 
 
-
-
-
-
-
-
+.wedding img{
+    width: 100%;}
+.wedding ul{
+    margin-top: .1rem;
+    margin-left: 1rem;
+    line-height: 2rem;
+    width: 100%;
+    background-color: var(--txt-color);
+    
+}
+.wedding ul li{
+    list-style: none;
+    border-bottom: 1px solid #bbb ;
+}
+.wedding ul li:hover{
+    background-color: #2f4858;
+    color: mintcream;
+}
+.wedding-right-side{
+    /* position: absolute; */
+    /* align-self: flex-end; */
+    margin: 2rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    
+}
+.wedding-right-side h4{
+    margin-bottom: 2rem;
+}
+.wedding-right-side p{
+    height: 3rem;
+    margin: 0 0 .5rem 1rem;
+    border-bottom: 1px solid var(--txt-color);
+    
+}
 
 
 .mid-area{
@@ -287,6 +340,7 @@ header nav ul.open {display: block;}
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 3rem 0;
 }
 .bed-holder{
@@ -316,6 +370,14 @@ header nav ul.open {display: block;}
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
 /*   temple.html  */ 
 
 .grid {
@@ -327,7 +389,7 @@ header nav ul.open {display: block;}
 .grid section {
     margin: 0.25rem;
     padding: 0.35rem;
-    background-color: #eee;
+    background-color: #bbb;
     border: 1px solid #212480;
     border-radius: 3px;
     box-shadow: 2px 3px 5px rgba(0,0,0,.5);
@@ -345,7 +407,7 @@ header nav ul.open {display: block;}
     margin: auto;
     font-size: 1.2rem;
 }
-.grid img {
+.grid .imglogo {
     margin: 0.8rem ;
     max-width: 380px;
     box-shadow: 0 0 30px #777;
@@ -368,7 +430,11 @@ header nav ul.open {display: block;}
 .grid details p{
     font-size: 14px;
 }
-
+.grid .imglike{
+    width: 20px;
+    margin-left: 2rem;
+    
+}
 
 
 
@@ -479,7 +545,7 @@ header nav ul.open {display: block;}
 /* footer Css */
 
 .f-wrapper{
-    display: flex;
+    display: block;
     flex-direction: row;
     background-color: var(--secondary-color);
     border-radius: 5px;
@@ -498,7 +564,7 @@ header nav ul.open {display: block;}
 .contact{
     min-width: 25%;
     padding-top: 1rem;
-    font-size: .8rem;
+    font-size: .6rem;
 }
 .f-wrapper img{
     max-height: 30px;
@@ -513,6 +579,185 @@ header nav ul.open {display: block;}
     border-radius: 3px;
 }
 
+
+
+
+
+
+
+
+
+
+/*      missionary     */
+.all-rooms, .room-rating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.room-type{
+    border: 1px solid #bbb;
+    width: 98%;
+    margin: 2% 1%;
+    background-color: #fff;
+    font-size: 14px;
+}
+.room-img{
+    width: 100%;
+    margin: 0;
+}
+
+.room-type h3, .room-stars{
+    text-align: left;
+    margin: 0 .5rem ;
+}
+
+.room-rating{
+    margin: .4rem .5rem;
+}
+.rating{
+    background-color: #2e35f3;
+    padding: 0 .3rem;
+    border-radius: 3px;
+    color: #bbb;
+    font-size: 10px;
+    margin-right: .5rem;
+}
+.rating span{
+    font-size: 14px;
+    color: white;
+}
+.room-reviews{
+    color: #2e35f3;
+    font-weight: 600;
+    margin-right: .5rem;
+}
+.reviews-num span{
+    margin-right: .5rem;
+}
+.reviews-num{color: #888;}
+
+.room-distance, .room-desc{
+    margin: .5em .8rem;
+    text-align: left;
+}
+.room-desc{
+    color: #888;
+}
+.room-price{
+    text-align: right;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+.room-price span{
+    font-size: 1.2rem;
+    color: #2e35f3;
+}
+.room-check{
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-right: 1rem;
+    
+}
+.room-check div{
+    padding: .5rem .5rem;
+    text-align: center;
+    width: 150px;
+    margin-bottom: .7rem;
+    background-color:var(--secondary-color);
+    border-radius: 5px;
+
+}
+.room-check a{
+    margin: 0 0 .5rem .5rem;
+    text-decoration: none;
+    background-color: #444;
+    padding: .5rem .8rem;
+    border-radius: 3px;
+    color: #bbb;
+}
+
+/*         About us         */
+
+.backgrn{
+    background-color: #888;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+
+.buttons{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    margin: 2rem;
+    padding: 2rem 0;
+}
+
+.buttons div{
+    /* margin-left: 1rem; */
+    text-align: left;
+    height: 20px;
+    padding: .4rem 0;
+}
+.register{
+    margin-right: 2rem;
+    width: 200px;
+}
+.register a {
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    padding: .5rem 1rem;
+    border: 2px solid white;
+    
+}
+.buttons-help, .pointer{
+    visibility: hidden;
+}
+
+.buttons-help span{
+    padding: .5rem;
+    color: white;
+    background-color: rgba(15,41,77,0.7);
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #888;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.bottom h4{
+    text-align: left;
+    margin-left: 1rem;
+}
+.bottom div{
+    width: 100%;
+}
+.bottom ul{
+    list-style: none;
+    text-align: left;
+    font-size: 12px;
+    margin: 1rem 2rem;
+    
+}
+.bottom ul li a{
+    text-decoration: none;
+    color: #2e35f3;
+}
+.bottom ul li img{
+    width: 18px;
+    border-radius: 6px;
+}
 
 
 
